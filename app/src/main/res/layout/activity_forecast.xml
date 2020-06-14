@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--TODO (1) Change the ConstraintLayout to a FrameLayout-->
+<!--TODO (7) Remove the line that declares the id, we don't need it-->
+<!-- TODO (3) Replace dimension values with @dimen resources -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--TODO (8) Wrap the TextView in a ScrollView-->
+    <!--TODO (9) Set the ScrollView width to match_parent and the height to wrap_content-->
+
+    <!--TODO (2) Change the TextView's android:id attribute to tv_weather_data-->
+    <!--TODO (3) Give the TextView 16dp of padding-->
+    <!--TODO (4) Set the text size to 20sp-->
+    <!--TODO (5) Remove all attributes with the word constraint in them-->
+    <!--TODO (6) Remove the default text from the TextView-->
+
+    <!--TODO (2) Replace ScrollView and TextView with RecyclerView-->
+    <!--TODO (3) Give the RecyclerView an id of @+id/recyclerview_forecast-->
+    <!--TODO (4) Set the width and the height of the RecyclerView to match_parent-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_forecast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+        <ProgressBar
+            android:id="@+id/pb_display_progressbar"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            />
+
+
+    <!--TODO (12) Add a ProgressBar to show the user content is loading-->
+    <!--TODO (13) Make the width and height of the ProgressBar 42dp-->
+    <!--TODO (14) Set the layout_gravity of the ProgressBar to center-->
+    <!--TODO (15) Set the default visibility of the ProgressBar to invisible-->
+
+</FrameLayout>
